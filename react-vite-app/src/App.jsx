@@ -142,24 +142,63 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className={`min-h-screen flex items-center justify-center ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
-        <div className="text-center px-4">
-          <h1 className={`text-5xl md:text-7xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-black'}`}>
-            Hi, I'm Mahi
-          </h1>
-          <p className={`text-xl md:text-2xl mb-8 max-w-2xl mx-auto ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            Full Stack Developer passionate about creating amazing web experiences
-          </p>
-          <button
-            onClick={() => scrollToSection('projects')}
-            className={`font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl ${
-              isDarkMode ? 'bg-white text-black' : 'bg-black text-white'
-            }`}
-          >
-            View My Work
-          </button>
-        </div>
-      </section>
+      <section
+      id="home"
+      className={`min-h-screen flex items-center justify-center ${
+        isDarkMode ? "bg-black" : "bg-white"
+        }`}>
+          <div className="text-center px-4 max-w-3xl">
+            <h1
+            className={`text-5xl md:text-7xl font-bold mb-4 ${
+              isDarkMode ? "text-white" : "text-black"}`}>
+                Mahi Sawner
+            </h1>
+
+    {/* Gradient Title */}
+    <h2 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-[#60A5FA] via-[#A855F7] via-[#EC4899] to-[#FACC15] bg-clip-text text-transparent">
+      Full-Stack Developer 
+    </h2>
+
+
+    <p
+    className={`text-base md:text-lg leading-relaxed mb-4 ${   
+    isDarkMode ? "text-gray-300" : "text-gray-700"
+    }`}>
+      <strong>Hey there!</strong> I'm <strong>Mahi Sawner</strong>, a versatile
+      developer passionate about both <em>front-end</em> and{" "}
+      <em>back-end</em> technologies.
+    </p>
+
+    <p
+      className={`text-base md:text-lg leading-relaxed mb-4 ${
+        isDarkMode ? "text-gray-300" : "text-gray-700"
+      }`}
+    >
+      I specialize in creating <strong>efficient, scalable</strong> and{" "}
+      <strong>responsive web applications</strong> using modern frameworks like{" "}
+      <strong>React</strong> and <strong>Node.js</strong>.
+    </p>
+
+    <p
+      className={`text-base md:text-lg leading-relaxed mb-8 ${
+        isDarkMode ? "text-gray-300" : "text-gray-700"
+      }`}
+    >
+      From sleek UI designs to <strong>real-world problem solving</strong>, I
+      love building user-friendly digital experiences that make an impact.
+    </p>
+
+    <button
+      onClick={() => scrollToSection("projects")}
+      className={`font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl ${
+        isDarkMode ? "bg-white text-black" : "bg-black text-white"
+      }`}
+    >
+      View My Work
+    </button>
+  </div>
+</section>
+
 
       {/* About Me Section */}
       <section id="about" className={`py-20 px-4 ${isDarkMode ? 'bg-black' : 'bg-gray-50'}`}>
@@ -190,45 +229,41 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <h2 className={`text-4xl font-bold text-center mb-12 ${isDarkMode ? 'text-white' : 'text-black'}`}>Skills</h2>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">⚛️</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>React</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Frontend Framework</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-blue-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-blue-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>ReactJS</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Frontend Framework</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">🟢</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Node.js</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Backend Runtime</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-green-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-green-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>React Native</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Mobile Development</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">🐍</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Python</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Programming Language</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-green-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-green-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>Node.js</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Backend Runtime</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">💾</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>MongoDB</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Database</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-purple-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-purple-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>Express</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Web Framework</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">🎨</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Tailwind CSS</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>CSS Framework</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-yellow-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-yellow-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>Python</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Programming Language</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Vite</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Build Tool</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-blue-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-blue-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>MySQL</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Database</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">🔥</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Firebase</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Backend as a Service</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-red-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-red-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>DSA</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Data Structures & Algorithms</p>
             </div>
-            <div className={`p-6 rounded-lg text-center transition-colors ${isDarkMode ? 'bg-gray-900 hover:bg-gray-800' : 'bg-gray-100 hover:bg-gray-200'}`}>
-              <div className="text-4xl mb-4">📱</div>
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>React Native</h3>
-              <p className={`text-gray-400 ${isDarkMode ? '' : 'text-gray-600'}`}>Mobile Development</p>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-yellow-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-yellow-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>JavaScript</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Programming Language</p>
+            </div>
+            <div className={`group p-8 rounded-2xl text-center transition-all duration-500 hover:scale-110 hover:shadow-2xl border backdrop-blur-sm ${isDarkMode ? 'bg-gray-800/60 border-gray-700 hover:bg-gray-700/80 hover:shadow-blue-500/20' : 'bg-white/60 border-gray-200 hover:bg-gray-50/80 hover:shadow-blue-500/20'}`}>
+              <h3 className={`text-2xl font-bold mb-3 group-hover:bg-gradient-to-r group-hover:from-[#60A5FA] group-hover:via-[#A855F7] group-hover:via-[#EC4899] group-hover:to-[#FACC15] group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 ${isDarkMode ? 'text-white' : 'text-black'}`}>Prisma</h3>
+              <p className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Database ORM</p>
             </div>
           </div>
         </div>
