@@ -1,4 +1,5 @@
- import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import Projects from './Projects'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -269,79 +270,7 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className={`py-20 px-4 ${isDarkMode ? 'bg-black' : 'bg-gray-50'}`}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className={`text-4xl font-bold text-center mb-12 ${isDarkMode ? 'text-white' : 'text-black'}`}>Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <div className={`rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border ${isDarkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'}`}>
-              <div className={`h-48 flex items-center justify-center ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
-                <span className="text-4xl">🚀</span>
-              </div>
-              <div className="p-6">
-                <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Project One</h3>
-                <p className={`mb-4 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  A modern web application built with React and Node.js featuring real-time updates and responsive design.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>React</span>
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>Node.js</span>
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>MongoDB</span>
-                </div>
-                <div className="flex space-x-4">
-                  <a href="#" className={`transition-colors ${isDarkMode ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-700'}`}>Live Demo</a>
-                  <a href="#" className={`transition-colors ${isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-600 hover:text-gray-700'}`}>GitHub</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className={`rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border ${isDarkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'}`}>
-              <div className={`h-48 flex items-center justify-center ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
-                <span className="text-4xl">📱</span>
-              </div>
-              <div className="p-6">
-                <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Project Two</h3>
-                <p className={`mb-4 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Mobile-first e-commerce platform with integrated payment processing and inventory management.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>Vue.js</span>
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>Firebase</span>
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>Stripe</span>
-                </div>
-                <div className="flex space-x-4">
-                  <a href="#" className={`transition-colors ${isDarkMode ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-700'}`}>Live Demo</a>
-                  <a href="#" className={`transition-colors ${isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-600 hover:text-gray-700'}`}>GitHub</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className={`rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border ${isDarkMode ? 'bg-black border-gray-800' : 'bg-white border-gray-200'}`}>
-              <div className={`h-48 flex items-center justify-center ${isDarkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
-                <span className="text-4xl">🎨</span>
-              </div>
-              <div className="p-6">
-                <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>Project Three</h3>
-                <p className={`mb-4 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                  Creative portfolio website with smooth animations and interactive elements built with modern CSS techniques.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>HTML5</span>
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>CSS3</span>
-                  <span className={`text-xs px-2 py-1 rounded ${isDarkMode ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'}`}>JavaScript</span>
-                </div>
-                <div className="flex space-x-4">
-                  <a href="#" className={`transition-colors ${isDarkMode ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-700'}`}>Live Demo</a>
-                  <a href="#" className={`transition-colors ${isDarkMode ? 'text-gray-400 hover:text-gray-300' : 'text-gray-600 hover:text-gray-700'}`}>GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Projects isDarkMode={isDarkMode} />
 
       {/* Contact Section */}
       <section id="contact" className={`py-20 px-4 ${isDarkMode ? 'bg-black' : 'bg-white'}`}>
