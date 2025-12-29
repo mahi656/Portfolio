@@ -16,6 +16,7 @@ const iconColors = {
     SiJavascript: '#F7DF1E',
     SiTypescript: '#3178C6',
     SiHtml5: '#E34F26',
+    SiExpo: '#4630EB',
 };
 
 const ProjectCard = ({ title, category, image, color, liveUrl, githubUrl, description, stack, iconName, tags }) => {

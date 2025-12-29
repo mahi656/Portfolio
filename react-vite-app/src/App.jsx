@@ -35,6 +35,17 @@ function App() {
             iconName: "Wallet",
             tags: ["HTML5", "CSS", "JavaScript", "React", "Responsive Design"],
             stack: ["SiHtml5", "SiCss3", "SiJavascript", "SiReact"]
+        },
+        {
+            title: "RailEase",
+            category: "Mobile Application",
+            color: "from-blue-600 to-cyan-600",
+            liveUrl: "https://drive.google.com/file/d/1HzQPxGO3F94-T5FqPGN5KUrIY7MH5fz7/view",
+            githubUrl: "https://github.com/mahi656/RailEase",
+            description: "A comprehensive React Native application for train booking and ticket management. Features interactive seat selection, real-time availability, and persistent storage for saved tickets.",
+            iconName: "TrainFront",
+            tags: ["React Native", "Expo", "AsyncStorage", "Navigation"],
+            stack: ["SiReact", "SiJavascript", "SiExpo"]
         }
     ];
 

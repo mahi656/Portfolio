@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
     SiJavascript,
-    SiTypescript,
     SiTailwindcss,
     SiReact,
     SiNextdotjs,
@@ -15,11 +14,11 @@ import {
     SiGithub,
     SiPython,
     SiJsonwebtokens,
+    SiPrisma,
 } from 'react-icons/si';
 
 const techs = [
     { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
-    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
     { name: 'Python', icon: SiPython, color: '#3776AB' },
     { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
     { name: 'React', icon: SiReact, color: '#61DAFB' },
@@ -30,6 +29,7 @@ const techs = [
     { name: 'Express', icon: SiExpress, color: 'hsl(var(--foreground))' },
     { name: 'JWT Authentication', icon: SiJsonwebtokens, color: 'hsl(var(--foreground))' },
     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+    { name: 'Prisma ORM', icon: SiPrisma, color: '#2D3748' },
     { name: 'Vercel', icon: SiVercel, color: 'hsl(var(--foreground))' },
     { name: 'Git', icon: SiGit, color: '#F05032' },
     { name: 'GitHub', icon: SiGithub, color: 'hsl(var(--foreground))' },
