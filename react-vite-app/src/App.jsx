@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from './components/Layout';
+import Cursor from './components/Cursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectCard from './components/ProjectCard';
@@ -27,6 +28,7 @@ function App() {
 
     return (
         <Layout>
+            <Cursor />
             <Navbar />
             <Hero />
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -40,32 +40,47 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/70 relative z-10"
+                className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl text-slate-900 dark:text-white relative z-10"
             >
-                I'M MAHI SAWNER, A <br />
-                <span className="text-foreground">FULL STACK DEVELOPER,</span> <br />
-                BUILD WEBSITES FOR <br />
-                <span className="text-foreground">STARTUPS.</span>
+                I'm Mahi Sawner, a <br />
+                <span className="text-slate-700 dark:text-slate-300">Full Stack Developer,</span> <br />
+                build websites for <br />
+                <span className="text-slate-700 dark:text-slate-300">Startups.</span>
             </motion.h1>
 
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed relative z-10"
+                className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed relative z-10"
             >
                 I design unique websites that turn start-ups into market leaders. Let's create a digital presence that not only looks amazing but also drives real results for your business.
             </motion.p>
-
-            {/* Blue Textured Background */}
-            <div className="absolute inset-0 -z-10 bg-[#F0F4FF] dark:bg-[#0a0a1a]" />
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-[0.4] dark:opacity-[0.1]" />
 
             {/* Vibrant Multi-color Mesh */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[conic-gradient(from_90deg_at_50%_50%,#E2E8F0_0%,#50a3f2_50%,#E2E8F0_100%)] opacity-20 blur-[100px] dark:opacity-10 mix-blend-multiply dark:mix-blend-normal -z-10" />
             <div className="absolute top-20 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob" />
             <div className="absolute top-20 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000 dark:hidden" />
-            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000" />
+            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000" />
+
+            {/* Scroll Indicator */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="absolute bottom-10 flex flex-col items-center gap-4 z-10"
+            >
+                <ChevronDown className="w-6 h-6 text-muted-foreground animate-bounce" />
+                <button
+                    onClick={() => document.getElementById('work').scrollIntoView({ behavior: 'smooth' })}
+                    className="flex items-center gap-2 bg-background/50 backdrop-blur-sm px-6 py-2 rounded-full border border-border/50 hover:bg-background/80 transition-colors group cursor-pointer"
+                >
+                    <div className="w-2 h-2 rounded-full border border-green-500/50 flex items-center justify-center">
+                        <div className="w-1 h-1 bg-green-500 rounded-full" />
+                    </div>
+                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">Featured Work</span>
+                </button>
+            </motion.div>
 
             {/* Decorative Circles */}
             <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-[600px] h-[600px] border border-blue-200/50 dark:border-blue-800/20 rounded-full -z-10" />
