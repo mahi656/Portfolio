@@ -46,14 +46,25 @@ const GetinTouch = () => {
                             <span className="text-2xl font-bold">Mahi Sawner</span>
                         </div>
                         <p className="text-muted-foreground leading-relaxed max-w-xs">
-                            Full-stack developer who enjoys building complete, thoughtful digital experiences from idea to execution.
+                            I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.
                         </p>
                         <div className="flex gap-4 pt-4">
-
-                            <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors">
+                            <a
+                                href="https://github.com/mahi656"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors"
+                            >
+                                <Github className="w-5 h-5" />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/mahi-sawner-a38556304/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors"
+                            >
                                 <Linkedin className="w-5 h-5" />
                             </a>
-
                         </div>
                     </div>
 
