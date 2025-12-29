@@ -8,6 +8,8 @@ import ProjectCard from './components/ProjectCard';
 import GetinTouch from './components/GetinTouch';
 import About from './components/About';
 import TechStack from './components/TechStack';
+import Contributions from './components/Contributions';
+import SectionSeparator from './components/SectionSeparator';
 import Footer from './components/Footer';
 
 function App() {
@@ -41,8 +43,13 @@ function App() {
             <Cursor />
             <Navbar />
             <Hero />
+            <SectionSeparator />
             <About />
+            <SectionSeparator />
             <TechStack />
+            <SectionSeparator />
+            <Contributions />
+            <SectionSeparator />
 
             <section id="work" className="py-20 container mx-auto px-4 max-w-5xl">
                 <div className="flex items-center justify-between mb-12">
@@ -62,6 +69,8 @@ function App() {
                     ))}
                 </div>
             </section>
+
+            <SectionSeparator />
 
             <GetinTouch />
             <Footer />

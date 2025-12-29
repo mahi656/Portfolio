@@ -81,7 +81,6 @@ const TechStack = () => {
                 ))}
             </div>
 
-            <div className="w-full h-px bg-gradient-to-r from-transparent via-border to-transparent my-20 opacity-50" />
         </section>
     );
 };
