@@ -26,12 +26,12 @@ function App() {
             stack: ["SiNextdotjs", "SiNodedotjs", "SiExpress", "SiMongodb", "SiSocketdotio", "SiRender"]
         },
         {
-            title: "Splitwise Clone",
+            title: "Splitwise",
             category: "Frontend App",
             color: "from-green-500 to-emerald-500",
             liveUrl: "https://finalproject-beta-orcin.vercel.app/",
             githubUrl: "https://github.com/mahi656/Finalproject",
-            description: "A comprehensive expense sharing application focusing on clean UI and efficient balance tracking. Built as a high-performance frontend clone.",
+            description: "An expense sharing application that tracks expenses, calculates balances, and simplifies shared spending",
             iconName: "Wallet",
             tags: ["HTML5", "CSS", "JavaScript", "React", "Responsive Design"],
             stack: ["SiHtml5", "SiCss3", "SiJavascript", "SiReact"]

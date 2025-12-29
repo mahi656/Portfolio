@@ -33,14 +33,16 @@ const Navbar = () => {
 
                     <div className="flex items-center gap-4">
                         <ThemeToggle />
-                        <motion.button
+                        <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                            href="https://western-brow-ec5.notion.site/Resume-Mahi-Sawner-2d8c646692b1806a9baac5e2803b5fbc?source=copy_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
                         >
                             View Resume
-                        </motion.button>
+                        </motion.a>
                     </div>
                 </nav>
             </div>

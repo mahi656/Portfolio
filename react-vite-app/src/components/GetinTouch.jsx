@@ -238,7 +238,7 @@ const GetinTouch = () => {
                         </a>
                     </div>
 
-                    <div className="lg:col-span-1">
+                    {/* <div className="lg:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="p-2 bg-secondary/50 rounded-lg border border-border/50">
                                 <Phone className="w-4 h-4 text-primary" />
@@ -248,7 +248,7 @@ const GetinTouch = () => {
                         <p className="text-lg font-bold text-foreground leading-relaxed">
                             +91 9479542577
                         </p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="w-full h-px bg-border mb-8" />
