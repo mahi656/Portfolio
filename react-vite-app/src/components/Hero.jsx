@@ -43,9 +43,9 @@ const Hero = () => {
                 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl text-slate-900 dark:text-white relative z-10"
             >
                 I'm Mahi Sawner, a <br />
-                <span className="text-slate-700 dark:text-slate-300">Full Stack Developer,</span> <br />
-                build websites for <br />
-                <span className="text-slate-700 dark:text-slate-300">Startups.</span>
+                <span className="text-slate-700 dark:text-slate-300">Computer Science Student & Full-Stack Developer</span> <br />
+                <br />
+                {/* <span className="text-slate-700 dark:text-slate-300">Startups.</span> */}
             </motion.h1>
 
             <motion.p
@@ -54,7 +54,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed relative z-10"
             >
-                I design unique websites that turn start-ups into market leaders. Let's create a digital presence that not only looks amazing but also drives real results for your business.
+                A full-stack developer focused on building practical web solutions and continuously improving through real-world projects.
             </motion.p>
 
             {/* Vibrant Multi-color Mesh */}

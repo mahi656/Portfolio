@@ -1,30 +1,75 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
-const ProjectCard = ({ title, category, image, color }) => {
+const ProjectCard = ({ title, category, image, color, liveUrl, githubUrl, description, tags }) => {
     return (
         <motion.div
-            whileHover={{ y: -10 }}
-            className="group relative rounded-3xl overflow-hidden bg-secondary/30 border border-border/50 aspect-[4/3] cursor-pointer hover:border-primary/20 transition-colors"
+            whileHover={{ y: -5 }}
+            className="group relative rounded-2xl overflow-hidden bg-card/10 backdrop-blur-xl border border-white/5 flex flex-col hover:border-white/10 transition-all duration-300 shadow-lg"
         >
-            <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />
-            {image && (
-                <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity" />
-            )}
+            {/* Subtle Gradient Glow */}
+            <div className={`absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br ${color} opacity-5 blur-3xl rounded-full group-hover:opacity-10 transition-opacity duration-500 pointer-events-none`} />
 
-            <div className="absolute inset-0 p-8 flex flex-col justify-between">
-                <div className="flex justify-between items-start">
-                    <div>
-                        <h3 className="text-2xl font-bold mb-1">{title}</h3>
-                        <p className="text-muted-foreground">{category}</p>
-                    </div>
-                    <div className="bg-background/50 p-3 rounded-full backdrop-blur-sm group-hover:bg-background transition-colors">
-                        <ArrowUpRight className="w-5 h-5" />
-                    </div>
+            <div className="relative p-6 flex flex-col h-full z-10 gap-5">
+                {/* Header */}
+                <div className="space-y-1">
+                    <p className="text-xs font-semibold text-primary/80 tracking-wider uppercase">{category}</p>
+                    <h3 className="text-2xl font-bold text-foreground">{title}</h3>
                 </div>
 
-                <div className="w-full h-1/2 bg-background/50 rounded-2xl backdrop-blur-sm border border-border/20 shadow-lg translate-y-4 group-hover:translate-y-2 transition-transform" />
+                {/* Description */}
+                {description && (
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                        {description}
+                    </p>
+                )}
+
+                {/* Tags */}
+                {tags && tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                        {tags.map((tag, index) => (
+                            <span
+                                key={index}
+                                className="px-2.5 py-1 text-[11px] font-medium rounded-full bg-white/5 border border-white/5 text-muted-foreground group-hover:text-foreground transition-colors"
+                            >
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                )}
+
+                {/* Reference-Style Link Buttons */}
+                <div className="flex items-center gap-6 pt-2 mt-2">
+                    {liveUrl && (
+                        <a
+                            href={liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors group/link"
+                        >
+                            <ExternalLink className="w-4 h-4" />
+                            <span className="relative">
+                                Live Demo
+                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-blue-400 scale-x-0 group-hover/link:scale-x-100 transition-transform origin-left" />
+                            </span>
+                        </a>
+                    )}
+                    {githubUrl && (
+                        <a
+                            href={githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors group/link"
+                        >
+                            <Github className="w-4 h-4" />
+                            <span className="relative">
+                                GitHub
+                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-foreground scale-x-0 group-hover/link:scale-x-100 transition-transform origin-left" />
+                            </span>
+                        </a>
+                    )}
+                </div>
             </div>
         </motion.div>
     );

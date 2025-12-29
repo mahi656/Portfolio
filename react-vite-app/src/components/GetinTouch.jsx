@@ -15,8 +15,8 @@ const GetinTouch = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h2 className="text-6xl md:text-8xl font-normal leading-tight tracking-tight">
-                            Let's Connect<br />
-                            There
+                            Contact Information<br />
+
                         </h2>
                     </motion.div>
 
@@ -46,21 +46,14 @@ const GetinTouch = () => {
                             <span className="text-2xl font-bold">Mahi Sawner</span>
                         </div>
                         <p className="text-muted-foreground leading-relaxed max-w-xs">
-                            Product Designer crafting intuitive experiences by decoding human behavior and needs.
+                            Full-stack developer who enjoys building complete, thoughtful digital experiences from idea to execution.
                         </p>
                         <div className="flex gap-4 pt-4">
-                            <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors">
-                                <Instagram className="w-5 h-5" />
-                            </a>
-                            <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors">
-                                <Twitter className="w-5 h-5" />
-                            </a>
+
                             <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors">
                                 <Linkedin className="w-5 h-5" />
                             </a>
-                            <a href="#" className="p-2 bg-foreground/5 rounded-full hover:bg-foreground/20 transition-colors">
-                                <Briefcase className="w-5 h-5" />
-                            </a>
+
                         </div>
                     </div>
 
@@ -77,31 +70,28 @@ const GetinTouch = () => {
                         <a href="mailto:mehtahimesh4@gmail.com" className="text-muted-foreground block mb-2 hover:text-foreground transition-colors">
                             mahisawner@gmail.com
                         </a>
-                        <a href="mailto:hello@mahi.design" className="text-muted-foreground block hover:text-foreground transition-colors">
-                            hello@mahi.design
-                        </a>
                     </div>
 
                     <div className="lg:col-span-1">
                         <h4 className="font-bold mb-6">Phone Number</h4>
                         <p className="text-muted-foreground leading-loose">
-                            +91 98765 43210<br />
-                            +91 12345 67890
+                            +91 9479542577<br />
+
                         </p>
                     </div>
                 </div>
 
                 <div className="w-full h-px bg-border mb-8" />
 
-                {/* Bottom Footer */}
+
                 <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm gap-4">
-                    <div className="flex gap-8">
+                    {/* <div className="flex gap-8">
                         <a href="#" className="hover:text-foreground transition-colors">Templates</a>
                         <a href="#" className="hover:text-foreground transition-colors">Tools</a>
                         <a href="#" className="hover:text-foreground transition-colors">Features</a>
                         <a href="#" className="hover:text-foreground transition-colors">About Us</a>
-                    </div>
-                    <p>All rights reserved @Mahi Sawner</p>
+                    </div> */}
+                    <p>© 2025 Mahi Sawner. All rights reserved.</p>
                 </div>
             </div>
         </section>

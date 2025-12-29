@@ -5,24 +5,29 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectCard from './components/ProjectCard';
 import GetinTouch from './components/GetinTouch';
+import About from './components/About';
+import TechStack from './components/TechStack';
 import Footer from './components/Footer';
 
 function App() {
     const projects = [
         {
-            title: "FinTech Dashboard",
-            category: "UI/UX Design",
-            color: "from-blue-500 to-purple-500"
+            title: "Ambulance Booking System",
+            category: "Healthcare Platform",
+            color: "from-red-500 to-rose-500",
+            liveUrl: "https://ambulance-booking-sooty.vercel.app/",
+            githubUrl: "https://github.com/mahi656/AMB_One",
+            description: "Real-time emergency response platform featuring live tracking, driver assignment, and secure JWT authentication. Built with a scalable microservices architecture and deployed on Render.",
+            tags: ["Next.js", "Node.js", "MongoDB", "Socket.io", "Render"]
         },
         {
-            title: "E-Commerce App",
-            category: "Mobile Design",
-            color: "from-orange-500 to-red-500"
-        },
-        {
-            title: "Travel Platform",
-            category: "Web Development",
-            color: "from-green-500 to-teal-500"
+            title: "Splitwise Clone",
+            category: "Full Stack App",
+            color: "from-green-500 to-emerald-500",
+            liveUrl: "https://finalproject-beta-orcin.vercel.app/",
+            githubUrl: "https://github.com/mahi656/Finalproject",
+            description: "A comprehensive expense sharing application allowing groups to split bills and track debts efficiently. Features secure user authentication and real-time balance updates.",
+            tags: ["React", "Express", "Node.js", "MongoDB"]
         }
     ];
 
@@ -31,6 +36,8 @@ function App() {
             <Cursor />
             <Navbar />
             <Hero />
+            <About />
+            <TechStack />
 
             <section id="work" className="py-20 container mx-auto px-4 max-w-5xl">
                 <div className="flex justify-between items-end mb-12">
