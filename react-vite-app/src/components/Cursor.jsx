@@ -35,16 +35,13 @@ const Cursor = () => {
 
     return (
         <motion.div
-            className="fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none z-[9999]"
+            className="fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none z-[9999] bg-slate-900/5 dark:bg-white/10 border border-slate-900/20 dark:border-white/50 shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_20px_rgba(255,255,255,0.4)]"
             style={{
                 translateX: cursorXSpring,
                 translateY: cursorYSpring,
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.5)',
-                boxShadow: '0 0 20px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3) inset'
             }}
         >
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-slate-900 dark:bg-white rounded-full shadow-[0_0_8px_rgba(0,0,0,0.2)] dark:shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
         </motion.div>
     );
 };
