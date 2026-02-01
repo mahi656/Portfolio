@@ -18,7 +18,7 @@ function App() {
             title: "Ambulance Booking System",
             category: "Healthcare Platform",
             color: "from-red-500 to-rose-500",
-            liveUrl: "https://mediride-frontend-again.onrender.com/",
+            liveUrl: "https://ambulance-booking-sooty.vercel.app/",
             githubUrl: "https://github.com/mahi656/AMB_One",
             description: "Real-time emergency response platform featuring live tracking, driver assignment, and secure JWT authentication. Built with a scalable microservices architecture.",
             iconName: "Ambulance",

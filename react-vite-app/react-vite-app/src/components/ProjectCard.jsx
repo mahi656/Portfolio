@@ -20,6 +20,7 @@ const iconColors = {
 };
 
 const ProjectCard = ({ title, category, image, color, liveUrl, githubUrl, description, stack, iconName, tags }) => {
+    // Dynamically get the icon from lucide-react
     const ProjectIcon = Icons[iconName] || Icons.Code;
 
     return (
@@ -41,8 +42,9 @@ const ProjectCard = ({ title, category, image, color, liveUrl, githubUrl, descri
                 </div>
             </div>
 
-          
+            {/* Content Section */}
             <div className="relative p-7 flex flex-col h-full z-10 gap-4">
+                {/* Header: Title and stack icons */}
                 <div className="flex justify-between items-start">
                     <h3 className="text-2xl font-bold text-foreground tracking-tight leading-tight max-w-[70%]">{title}</h3>
                     <div className="flex gap-3 pt-1.5">
@@ -59,11 +61,14 @@ const ProjectCard = ({ title, category, image, color, liveUrl, githubUrl, descri
                     </div>
                 </div>
 
+                {/* Description */}
                 {description && (
                     <p className="text-muted-foreground leading-relaxed text-[15px] font-medium">
                         {description}
                     </p>
                 )}
+
+                {/* Tech Tags */}
                 {tags && tags.length > 0 && (
                     <div className="flex flex-wrap gap-2 pt-2">
                         {tags.map((tag, idx) => (
@@ -76,6 +81,8 @@ const ProjectCard = ({ title, category, image, color, liveUrl, githubUrl, descri
                         ))}
                     </div>
                 )}
+
+                {/* Footer Links (Reference style: minimalist text links) */}
                 <div className="flex items-center gap-6 pt-6 mt-auto">
                     {liveUrl && (
                         <a
